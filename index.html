@@ -228,249 +228,34 @@
         </div>
 
         <div class="showcase-viewport">
-          <!-- Tab 1: Live Board Preview -->
+          <!-- Screenshots of the real app, taken with dev/tests/real/website-shots.ps1 -->
           <div class="showcase-panel active" id="panel-board">
-            <div class="mock-app-window">
-              <div class="mock-header">
-                <div class="mock-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
-                <div class="mock-title">FrontDesk &bull; Ashiana Residency &bull; Board</div>
-                <div class="mock-badge">Staff: Rahul (On Duty)</div>
-              </div>
-              <div class="mock-body">
-                <div class="mock-room-grid">
-                  <!-- Room 101: In House -->
-                  <div class="mock-card card-inhouse">
-                    <div class="card-head">
-                      <div>
-                        <strong>Room 101</strong>
-                        <span class="sub">Deluxe AC &bull; ₹2,400/night</span>
-                      </div>
-                      <span class="status-pill inhouse">In-House</span>
-                    </div>
-                    <div class="card-content">
-                      <div class="guest-name">Vikram Malhotra</div>
-                      <div class="guest-dates">Check-in: 25 Sep &bull; Checkout: 28 Sep (3 nights)</div>
-                      <div class="guest-charges">Current Bill: ₹7,560 (incl. GST)</div>
-                    </div>
-                    <div class="card-foot">
-                      <span class="hk-badge clean">Housekeeping: Clean</span>
-                      <span class="btn-micro">Extend Stay</span>
-                    </div>
-                  </div>
-
-                  <!-- Room 102: Due Today -->
-                  <div class="mock-card card-upcoming">
-                    <div class="card-head">
-                      <div>
-                        <strong>Room 102</strong>
-                        <span class="sub">Deluxe AC &bull; ₹2,400/night</span>
-                      </div>
-                      <span class="status-pill upcoming">Due Today</span>
-                    </div>
-                    <div class="card-content">
-                      <div class="guest-name">Pooja Sharma</div>
-                      <div class="guest-dates">Expected Check-in: 14:00 Today &bull; 2 nights</div>
-                      <div class="guest-charges">ID Proof required on arrival</div>
-                    </div>
-                    <div class="card-foot">
-                      <span class="hk-badge clean">Housekeeping: Clean</span>
-                      <span class="btn-micro primary">Check In</span>
-                    </div>
-                  </div>
-
-                  <!-- Room 103: Free -->
-                  <div class="mock-card card-free">
-                    <div class="card-head">
-                      <div>
-                        <strong>Room 103</strong>
-                        <span class="sub">Executive Suite &bull; ₹3,800/night</span>
-                      </div>
-                      <span class="status-pill avail">Vacant</span>
-                    </div>
-                    <div class="card-content centered">
-                      <div class="empty-icon">✓</div>
-                      <div class="empty-text">Ready for new booking</div>
-                      <div class="sub">Next booking: Tomorrow (28 Sep)</div>
-                    </div>
-                    <div class="card-foot">
-                      <span class="hk-badge clean">Housekeeping: Clean</span>
-                      <span class="btn-micro">New Stay</span>
-                    </div>
-                  </div>
-
-                  <!-- Banquet Hall -->
-                  <div class="mock-card card-inhouse">
-                    <div class="card-head">
-                      <div>
-                        <strong>Grand Banquet Hall</strong>
-                        <span class="sub">Hall &bull; ₹25,000/event</span>
-                      </div>
-                      <span class="status-pill inhouse">Reserved</span>
-                    </div>
-                    <div class="card-content">
-                      <div class="guest-name">Gupta Wedding Reception</div>
-                      <div class="guest-dates">Evening Event (18:00 - 23:00)</div>
-                      <div class="guest-charges">GST: 18% (SAC 9963)</div>
-                    </div>
-                    <div class="card-foot">
-                      <span class="hk-badge clean">Ready</span>
-                      <span class="btn-micro">Manage Event</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <figure class="win-window">
+              <div class="win-titlebar" aria-hidden="true"><img src="assets/app-icon.png" alt=""><span>FrontDesk</span>
+                <span class="win-controls"><svg viewBox="0 0 44 30"><path d="M17 15.5h10"/></svg><svg viewBox="0 0 44 30"><rect x="17.5" y="10.5" width="9" height="9"/></svg><svg viewBox="0 0 44 30"><path d="M17 10l10 10M27 10L17 20"/></svg></span></div>
+              <img class="win-shot" src="assets/screens/board.webp" width="2560" height="1600" loading="lazy" alt="The FrontDesk Board: every room and the banquet hall with today's guests, a room that needs cleaning, and the upcoming arrivals">
+            </figure>
           </div>
-
-          <!-- Tab 2: Invoicing Preview -->
           <div class="showcase-panel" id="panel-invoice">
-            <div class="mock-app-window">
-              <div class="mock-header">
-                <div class="mock-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
-                <div class="mock-title">Tax Invoice Preview &bull; INV/26-27/0042</div>
-                <div class="mock-badge">Rule 46 Compliant</div>
-              </div>
-              <div class="mock-body invoice-body">
-                <div class="invoice-paper">
-                  <div class="invoice-header">
-                    <div>
-                      <h2>Ashiana Residency</h2>
-                      <p>Civil Lines, Jaipur, Rajasthan &bull; Phone: +91 98765 43210</p>
-                      <p><strong>GSTIN:</strong> 08AAAAA0000A1Z5 &bull; <strong>State Code:</strong> 08 (Rajasthan)</p>
-                    </div>
-                    <div class="invoice-meta text-right">
-                      <span class="inv-tag">TAX INVOICE</span>
-                      <p><strong>Invoice No:</strong> INV/26-27/0042</p>
-                      <p><strong>Date:</strong> 27 Sep 2026</p>
-                    </div>
-                  </div>
-
-                  <hr class="inv-divider">
-
-                  <div class="invoice-billto">
-                    <div>
-                      <strong>Billed To:</strong> TechSolutions India Pvt Ltd<br>
-                      <strong>GSTIN:</strong> 08BBBBB1111B2Z3 &bull; <strong>Place of Supply:</strong> 08 (Rajasthan)<br>
-                      <strong>Guest:</strong> Vikram Malhotra &bull; Room 101 (3 Nights)
-                    </div>
-                  </div>
-
-                  <table class="inv-table">
-                    <thead>
-                      <tr>
-                        <th>Description</th>
-                        <th>SAC</th>
-                        <th>Qty</th>
-                        <th>Rate (₹)</th>
-                        <th>Taxable (₹)</th>
-                        <th>CGST (2.5%)</th>
-                        <th>SGST (2.5%)</th>
-                        <th>Total (₹)</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Room Stay (25-28 Sep)</td>
-                        <td>996311</td>
-                        <td>3</td>
-                        <td>₹2,400</td>
-                        <td>₹7,200</td>
-                        <td>₹180</td>
-                        <td>₹180</td>
-                        <td>₹7,560</td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-                  <div class="invoice-total-box">
-                    <div class="total-row"><span>Total Taxable Amount:</span> <strong>₹7,200</strong></div>
-                    <div class="total-row"><span>Total CGST:</span> <strong>₹180</strong></div>
-                    <div class="total-row"><span>Total SGST:</span> <strong>₹180</strong></div>
-                    <div class="total-row grand"><span>Invoice Grand Total:</span> <strong>₹7,560</strong></div>
-                    <div class="total-pay">Paid in full via UPI / Card (Auth: 839210) &bull; Checked out by Rahul (Staff)</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <figure class="win-window">
+              <div class="win-titlebar" aria-hidden="true"><img src="assets/app-icon.png" alt=""><span>FrontDesk</span>
+                <span class="win-controls"><svg viewBox="0 0 44 30"><path d="M17 15.5h10"/></svg><svg viewBox="0 0 44 30"><rect x="17.5" y="10.5" width="9" height="9"/></svg><svg viewBox="0 0 44 30"><path d="M17 10l10 10M27 10L17 20"/></svg></span></div>
+              <img class="win-shot" src="assets/screens/invoice.webp" width="2560" height="2180" loading="lazy" alt="A FrontDesk tax invoice for a business guest: the room, dinner and laundry with their SAC codes, and the GST by SAC code">
+            </figure>
           </div>
-
-          <!-- Tab 3: Activity Audit Log Preview -->
           <div class="showcase-panel" id="panel-audit">
-            <div class="mock-app-window">
-              <div class="mock-header">
-                <div class="mock-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
-                <div class="mock-title">Shift Activity Log &bull; FrontDesk Audit Trail</div>
-                <div class="mock-badge">Tamper-Proof</div>
-              </div>
-              <div class="mock-body">
-                <div class="audit-list">
-                  <div class="audit-item">
-                    <span class="audit-time">12:45 PM</span>
-                    <span class="role-chip staff">Staff: Rahul</span>
-                    <span class="audit-action">Check-out completed for <strong>Booking #2600042</strong> (Vikram Malhotra). Invoice <strong>INV/26-27/0042</strong> generated for ₹7,560.</span>
-                  </div>
-                  <div class="audit-item">
-                    <span class="audit-time">11:10 AM</span>
-                    <span class="role-chip manager">Manager: Priya</span>
-                    <span class="audit-action">Approved 5% corporate discount on Room 101. Recorded under manager credentials.</span>
-                  </div>
-                  <div class="audit-item">
-                    <span class="audit-time">09:30 AM</span>
-                    <span class="role-chip staff">Staff: Rahul</span>
-                    <span class="audit-action">Guest checked in Room 102. ID proof recorded (Aadhaar ending in 4921).</span>
-                  </div>
-                  <div class="audit-item">
-                    <span class="audit-time">08:00 AM</span>
-                    <span class="role-chip admin">System</span>
-                    <span class="audit-action">Daily backup verified: <code>venue-2026-09-27.db.enc</code> (Copied to secondary drive <code>E:\FrontDesk Backups</code>).</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <figure class="win-window">
+              <div class="win-titlebar" aria-hidden="true"><img src="assets/app-icon.png" alt=""><span>FrontDesk</span>
+                <span class="win-controls"><svg viewBox="0 0 44 30"><path d="M17 15.5h10"/></svg><svg viewBox="0 0 44 30"><rect x="17.5" y="10.5" width="9" height="9"/></svg><svg viewBox="0 0 44 30"><path d="M17 10l10 10M27 10L17 20"/></svg></span></div>
+              <img class="win-shot" src="assets/screens/activity.webp" width="2560" height="1600" loading="lazy" alt="The FrontDesk activity log: sign-ins, check-ins and a check-out with its invoice and UPI payment, each with who did it and when">
+            </figure>
           </div>
-
-          <!-- Tab 4: Secondary Backup System Preview -->
           <div class="showcase-panel" id="panel-backup">
-            <div class="mock-app-window">
-              <div class="mock-header">
-                <div class="mock-dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
-                <div class="mock-title">Secondary Backup System &bull; Disaster Recovery</div>
-                <div class="mock-badge">Dual-Storage</div>
-              </div>
-              <div class="mock-body backup-body">
-                <div class="backup-status-card">
-                  <div class="status-indicator-box">
-                    <div class="status-icon green">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
-                    </div>
-                    <div>
-                      <h4>Local Storage</h4>
-                      <p>Primary directory: <code>%APPDATA%\FrontDesk\backups\</code></p>
-                      <p class="sub">Rotates 7 daily, 4 weekly, 5 pre-update copies. Older than 60 days pruned automatically.</p>
-                    </div>
-                  </div>
-                  <span class="status-pill avail">Healthy (16 copies)</span>
-                </div>
-
-                <div class="backup-status-card">
-                  <div class="status-indicator-box">
-                    <div class="status-icon blue">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-                    </div>
-                    <div>
-                      <h4>Secondary Device (Plugged-In Storage / External Drive)</h4>
-                      <p>Target folder: <code>E:\FrontDesk backups\</code></p>
-                      <p class="sub">Storage connected. Missing copies synced automatically within the hour.</p>
-                    </div>
-                  </div>
-                  <span class="status-pill avail">Synced Just Now</span>
-                </div>
-
-                <div class="backup-disaster-note">
-                  <strong>Note:</strong> If at all your PC's hard drive crashes, restoring the secondary backup on a fresh computer ensures your financial invoice series picks up without skipping or duplicating numbers.
-                </div>
-              </div>
-            </div>
+            <figure class="win-window">
+              <div class="win-titlebar" aria-hidden="true"><img src="assets/app-icon.png" alt=""><span>FrontDesk</span>
+                <span class="win-controls"><svg viewBox="0 0 44 30"><path d="M17 15.5h10"/></svg><svg viewBox="0 0 44 30"><rect x="17.5" y="10.5" width="9" height="9"/></svg><svg viewBox="0 0 44 30"><path d="M17 10l10 10M27 10L17 20"/></svg></span></div>
+              <img class="win-shot" src="assets/screens/backups.webp" width="2560" height="1600" loading="lazy" alt="FrontDesk's Settings: the staff accounts, and backups kept on this PC and on a USB drive">
+            </figure>
           </div>
         </div>
       </div>
